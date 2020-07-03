@@ -75,6 +75,7 @@ global.logger = winston.createLogger({
 });
 
 app.listen(process.env.PORT, async () => {
+  console.log('STARTING...')
   /**
    * Reiniciando o arquivo com os dados
    * simulados. Comente a linha abaixo
