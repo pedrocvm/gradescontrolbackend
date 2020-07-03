@@ -65,7 +65,6 @@ function simulateGrades() {
 global.logger = winston.createLogger({
   level: 'silly',
   transports: [
-    new winston.transports.Console(),
     new winston.transports.File({ filename: 'grades-control-api.log' }),
   ],
   format: combine(
